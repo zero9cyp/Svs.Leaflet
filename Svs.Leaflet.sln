@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Svs.Leaflet", "Svs.Leaflet.vbproj", "{7855DEE4-1D19-4D96-9E58-D2CD8B57C58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nss.Models", "..\Nss.Models\Nss.Models.csproj", "{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Production|Any CPU = Production|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7855DEE4-1D19-4D96-9E58-D2CD8B57C58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7855DEE4-1D19-4D96-9E58-D2CD8B57C58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7855DEE4-1D19-4D96-9E58-D2CD8B57C58C}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{7855DEE4-1D19-4D96-9E58-D2CD8B57C58C}.Production|Any CPU.Build.0 = Release|Any CPU
+		{7855DEE4-1D19-4D96-9E58-D2CD8B57C58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7855DEE4-1D19-4D96-9E58-D2CD8B57C58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Production|Any CPU.Build.0 = Production|Any CPU
+		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFB92B19-25A5-4AA9-94D8-C7A6986C3E07}
+	EndGlobalSection
+EndGlobal

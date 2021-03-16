@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJNAM": null, "NOBJNM": null, "INFORM": "Hazardous Operations", "NINFOM": null, "AREA_NO": "01", "SHAPE_Leng": 2.6365042063700002, "SHAPE_Area": 0.20243055536099999 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 24.966666667000027, 40.583333333000041 ], [ 25.5, 40.3 ], [ 25.65, 40.275 ], [ 25.55, 40.116666667000061 ], [ 24.933333333000064, 40.333333333000041 ], [ 24.75, 40.15 ], [ 24.55, 40.183333333000064 ], [ 24.966666667000027, 40.583333333000041 ] ] ] } },
+{ "type": "Feature", "properties": { "OBJNAM": null, "NOBJNM": null, "INFORM": "Hazardous Operations", "NINFOM": null, "AREA_NO": "08", "SHAPE_Leng": 1.3077612974199999, "SHAPE_Area": 0.099583333275000005 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 26.28333333300003, 37.45 ], [ 26.458333333000041, 37.141666667000038 ], [ 26.15, 37.083333333000041 ], [ 26.0, 37.4 ], [ 26.06666666700005, 37.4 ], [ 26.28333333300003, 37.45 ] ] ] } },
+{ "type": "Feature", "properties": { "OBJNAM": null, "NOBJNM": null, "INFORM": "Hazardous Operations", "NINFOM": null, "AREA_NO": "071", "SHAPE_Leng": 1.4099483530300001, "SHAPE_Area": 0.120005416166 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 25.16606986000005, 38.99903110300005 ], [ 24.866063438000026, 38.899027489000048 ], [ 24.666055741000037, 39.232366718000037 ], [ 24.966062165000039, 39.332370388000072 ], [ 25.16606986000005, 38.99903110300005 ] ] ] } },
+{ "type": "Feature", "properties": { "OBJNAM": null, "NOBJNM": null, "INFORM": "Hazardous Operations", "NINFOM": null, "AREA_NO": "075", "SHAPE_Leng": 1.8667082180400001, "SHAPE_Area": 0.21750965359900001 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 25.349413380000044, 38.299017722000031 ], [ 24.866068440000049, 38.299015281000038 ], [ 24.866064703000063, 38.749024402000032 ], [ 25.349409715000036, 38.749026867000055 ], [ 25.349413380000044, 38.299017722000031 ] ] ] } }
+]
+}

@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJNAM": "TOPEL", "NOBJNM": null, "DISPLAY": "TOPEL", "CATEGORY": "B", "MUCODE": null, "NATION_ID": "TR", "LON": "30° 4' 58,308\"", "LAT": "40° 44' 6,666\"", "COMMENTS": null, "KIND": "Αεροδρόμιο", "SUAUTH": null, "CATAIR": null }, "geometry": { "type": "Point", "coordinates": [ 30.082863329000077, 40.735185009000077 ] } },
+{ "type": "Feature", "properties": { "OBJNAM": "KAKLIC", "NOBJNM": null, "DISPLAY": "KAKLIC", "CATEGORY": "B", "MUCODE": null, "NATION_ID": "TR", "LON": "26° 58' 37,277\"", "LAT": "38° 31' 13,932\"", "COMMENTS": null, "KIND": "Αεροδρόμιο", "SUAUTH": null, "CATAIR": null }, "geometry": { "type": "Point", "coordinates": [ 26.977021266000065, 38.520536612000058 ] } },
+{ "type": "Feature", "properties": { "OBJNAM": "EDREMIT", "NOBJNM": null, "DISPLAY": "EDREMIT", "CATEGORY": "B", "MUCODE": null, "NATION_ID": "TR", "LON": "27° 0' 34,748\"", "LAT": "39° 33' 6,832\"", "COMMENTS": null, "KIND": "Αεροδρόμιο", "SUAUTH": null, "CATAIR": null }, "geometry": { "type": "Point", "coordinates": [ 27.009652307000067, 39.551897643000075 ] } },
+{ "type": "Feature", "properties": { "OBJNAM": "ISPARTA", "NOBJNM": null, "DISPLAY": "ISPARTA", "CATEGORY": "B", "MUCODE": null, "NATION_ID": "TR", "LON": "30° 22' 7,898\"", "LAT": "37° 51' 23,808\"", "COMMENTS": null, "KIND": "Αεροδρόμιο", "SUAUTH": null, "CATAIR": null }, "geometry": { "type": "Point", "coordinates": [ 30.368860518000076, 37.856613467000045 ] } }
+]
+}

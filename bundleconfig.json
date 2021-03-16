@@ -1,0 +1,110 @@
+[
+  {
+    "outputFileName": "Scripts/leaflet-realtime.min.js",
+    "inputFiles": [
+      "Scripts/leaflet-realtime.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/leaflet.rotatedMarker.min.js",
+    "inputFiles": [
+      "Scripts/leaflet.rotatedMarker.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/L.Graticule.min.js",
+    "inputFiles": [
+      "Scripts/L.Graticule.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/L.Control.Layers.Tree.min.css",
+    "inputFiles": [
+      "Content/L.Control.Layers.Tree.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Leaflet.Coordinates-0.1.5.min.css",
+    "inputFiles": [
+      "Content/Leaflet.Coordinates-0.1.5.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/leaflet.fusesearch.min.css",
+    "inputFiles": [
+      "Content/leaflet.fusesearch.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Control.FullScreen.min.css",
+    "inputFiles": [
+      "Content/Control.FullScreen.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Control.FullScreen.min.js",
+    "inputFiles": [
+      "Scripts/Control.FullScreen.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/leaflet.fusesearch.min.js",
+    "inputFiles": [
+      "Scripts/leaflet.fusesearch.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/popper-utils.min.min.js",
+    "inputFiles": [
+      "Scripts/popper-utils.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/fuse.min.js",
+    "inputFiles": [
+      "Scripts/fuse.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/RobotoCondensed.min.css",
+    "inputFiles": [
+      "Content/RobotoCondensed.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Leaflet.PolylineMeasure.min.js",
+    "inputFiles": [
+      "Scripts/Leaflet.PolylineMeasure.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/flags-all.min.css",
+    "inputFiles": [
+      "Content/flags-all.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/L.Control.SlideMenu.min.css",
+    "inputFiles": [
+      "Content/L.Control.SlideMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/leaflet.min.css",
+    "inputFiles": [
+      "Content/leaflet.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Leaflet.PolylineMeasure.min.css",
+    "inputFiles": [
+      "Content/Leaflet.PolylineMeasure.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/site.min.css",
+    "inputFiles": [
+      "Content/site.css"
+    ]
+  }
+]

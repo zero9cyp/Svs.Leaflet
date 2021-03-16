@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "NOBJNM": null, "OBJNAM": "[K]", "INFORM": "[P]", "NINFOM": null, "SCAMIN": 0 }, "geometry": { "type": "Point", "coordinates": [ 19.891222222000067, 39.607136111000045 ] } },
+{ "type": "Feature", "properties": { "NOBJNM": null, "OBJNAM": "[L]", "INFORM": "[R]", "NINFOM": null, "SCAMIN": 0 }, "geometry": { "type": "Point", "coordinates": [ 25.180730556000071, 39.90685 ] } },
+{ "type": "Feature", "properties": { "NOBJNM": null, "OBJNAM": "[H]", "INFORM": "[Q] [S]", "NINFOM": null, "SCAMIN": 0 }, "geometry": { "type": "Point", "coordinates": [ 25.748594444000048, 35.322136111000077 ] } }
+]
+}
