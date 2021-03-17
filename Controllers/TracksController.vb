@@ -18,9 +18,9 @@ Namespace Controllers
 
         Private Shared ReadOnly _log As log4net.ILog = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-        '  <HttpGet>
-        '  <Route("api/tracks/currentsituation/{id}")>
-        '  <ResponseType(GetType(List(Of Track)))>
+        <HttpGet>
+        <Route("api/tracks/currentsituation/{id}")>
+        <ResponseType(GetType(List(Of Track)))>
         Public Async Function GetRealTimeTracks(ByVal id As String) As Task(Of IHttpActionResult)
             Dim otherSources As String() = {"ACSS-AIS", "ACSS-TRACKS", "ACSS-TRACKS-BIG", "NSS"}
 

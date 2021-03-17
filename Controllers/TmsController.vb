@@ -8,7 +8,7 @@ Imports System.Net.Http.Headers
 Imports System.Web.Hosting
 Imports System.Web.Http
 Imports Microsoft.AspNet.WebApi.Extensions.Compression.Server.Attributes
-'Imports Nss.MapViewer.Providers
+Imports Svs.Leaflet.MbtilesProvider
 
 Namespace Controllers
     <Compression(Enabled:=False)>
@@ -31,7 +31,7 @@ Namespace Controllers
 
             Select Case name
                 Case "osm"
-                    fullPath = HostingEnvironment.MapPath("~/cyprus2.mbtiles")
+                    fullPath = HostingEnvironment.MapPath("~/cyprus.mbtiles")
                 Case "enc"
                     fullPath = HostingEnvironment.MapPath("~/App_Data/GeoIndex_el.mbtiles")
                 Case Else

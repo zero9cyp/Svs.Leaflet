@@ -24,6 +24,7 @@ Namespace Controllers
         'Add by Svs
         Private Shared ReadOnly _log As log4net.ILog = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
+        'GET: GeoLayer
         <HttpGet>
         <Compress>
         Public Function Index() As ActionResult
@@ -33,13 +34,14 @@ Namespace Controllers
             Using db As NssDbEntities = New NssDbEntities()
 
                 Try
-                    result = db.Layers.AsNoTracking().Where(Function(m) m.visible = True).OrderBy(Function(m) m.groupname).ThenBy(Function(m) m.sortorder).ToList()
+                    'Add the Layers to DB I don't have the DB ready Yet
+                    ' result = db.Layers.AsNoTracking().Where(Function(m) m.visible = True).OrderBy(Function(m) m.groupname).ThenBy(Function(m) m.sortorder).ToList()
                 Catch ex As Exception
                     _log.Fatal("Index()", ex)
                 End Try
             End Using
 
-            Return Content(JsonConvert.SerializeObject(result, Formatting.None), "application/json", Encoding.UTF8)
+            Return Nothing 'For the moment see it Later>>> Content(JsonConvert.SerializeObject(result, Formatting.None), "application/json", Encoding.UTF8)
         End Function
 
         <HttpGet>

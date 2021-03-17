@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Svs.Leaflet", "Svs.Leaflet.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nss.Models", "..\Nss.Models\Nss.Models.csproj", "{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Svs.Test.Viewr", "..\Svs.Test.Viewr\Svs.Test.Viewr.vbproj", "{1C5C301F-B835-46F8-9114-A6D55BC1F561}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,12 @@ Global
 		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Production|Any CPU.Build.0 = Production|Any CPU
 		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE4D0FD4-805B-4736-8654-981EB8F5EDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5C301F-B835-46F8-9114-A6D55BC1F561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5C301F-B835-46F8-9114-A6D55BC1F561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5C301F-B835-46F8-9114-A6D55BC1F561}.Production|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5C301F-B835-46F8-9114-A6D55BC1F561}.Production|Any CPU.Build.0 = Debug|Any CPU
+		{1C5C301F-B835-46F8-9114-A6D55BC1F561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5C301F-B835-46F8-9114-A6D55BC1F561}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

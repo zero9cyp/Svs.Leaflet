@@ -1,19 +1,34 @@
-﻿Public Class HomeController
+﻿Imports System
+Imports System.Linq
+Imports System.Web.Mvc
+Imports Nss.Models
+Public Class HomeController
     Inherits System.Web.Mvc.Controller
 
-    Function Index() As ActionResult
+
+    Private Shared ReadOnly _log As log4net.ILog = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+
+    Public Function Index() As ActionResult
+        Using db As NssDbEntities = New NssDbEntities()
+
+            Try
+                Dim dataSources As String() = db.vwCurrentSituations.AsNoTracking().Where(Function(m) m.DataSource.Equals("ACSS-TRACKS")).[Select](Function(m) m.Category).Distinct().ToArray()
+                ViewBag.dataSources = dataSources
+            Catch ex As Exception
+                _log.Fatal("GetRealTimeTracks()", ex)
+            End Try
+        End Using
+
         Return View()
     End Function
 
-    Function About() As ActionResult
-        ViewData("Message") = "Your application description page."
-
+    Public Function About() As ActionResult
+        ViewBag.Message = "Your application description page."
         Return View()
     End Function
 
-    Function Contact() As ActionResult
-        ViewData("Message") = "Your contact page."
-
+    Public Function Contact() As ActionResult
+        ViewBag.Message = "Your contact page."
         Return View()
     End Function
 End Class
