@@ -3,12 +3,38 @@
 
     Dim dataSources As String = ViewBag.dataSources
 end code
+<html>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Svs_MAP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+    </nav>
+    <!-- Page Content -->
+    <<div class="container-fluid">
+        <div class="row">
+            <div id="map" class="col-sm-12"></div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="py-3 bg-dark">
+        <div class="container-fluid">
+            <p class="m-0 text-white">
+                Copyright &copy; SVS. 2021
+                <span id="aisStatus" style="float:right;display:none">AIS Status</span>
+                <span style="float:right;display:none;"> :: </span>
+                <span id="acssStatus" style="float:right">ACSS Status</span>
+            </p>
+        </div>
+    </footer>
+    <script src="/scripts/js?v=kQnNEHq0B8fmE8g_zqJ52z_YjKHH_rSFcrbcu7kknp81"></script>
 
-<div Class="row">
-    <div id = "map" Class="col-sm-12"></div>
-</div>
-
-@section scripts{
     <script type="text/javascript">
         var searchCtrl = null;
         var arrayIdentities = [];
@@ -149,8 +175,8 @@ end code
 
                     var vesselSymbol = new ms.Symbol(
                         f.properties.sidc, {
-                            uniqueDesignation: f.properties.vesselname
-                        });
+                        uniqueDesignation: f.properties.vesselname
+                    });
 
                     // Now that we have a symbol we can ask for the echelon and set the symbol size
                     vesselSymbol = vesselSymbol.setOptions({
@@ -184,12 +210,6 @@ end code
                 font: '14px',
                 fontColor: '#000',
                 weight: '0.9'
-                ////zoomInterval: [
-                ////    { start: 2, end: 3, interval: 30 },
-                ////    { start: 4, end: 4, interval: 10 },
-                ////    { start: 5, end: 7, interval: 5 },
-                ////    { start: 8, end: 10, interval: 1 }
-                ////]
             });
 
             // set the map start-up position
@@ -201,7 +221,7 @@ end code
             // set-up tracks & grid layers
             //map.addLayer(aisLayer);
             map.addLayer(tracksLayer);
-            //map.addLayer(gridLayer);
+            map.addLayer(gridLayer);
 
 
             // Layers Tree
@@ -410,13 +430,6 @@ end code
                 + '</div>';
             contents += '<hr>';
             contents += '<div id ="categoriesPanel"><h5>Vessel Categories</h5>'
-                           If (dataSources!= null && dataSources.Length > 0) Then
-                                                 {
-                    foreach(String category In dataSources)
-                    {
-:+ drawCheckbox('check-category', 'category', 'category')
-                    }
-                }
                 + '</div>';
             contents += '<hr>';
             contents += '<div class="form-group text-right">';
@@ -427,10 +440,10 @@ end code
 
             $(".check-identification").change(function () {
                 var k = $(this).val();
-                If (this.checked) Then {
+                if (this.checked) {
                     arrayIdentities.push(k);
                 }
-                Else {
+                else {
                     var t2 = arrayIdentities.indexOf(k);
                     arrayIdentities.splice(t2, 1);
                 }
@@ -438,11 +451,11 @@ end code
 
             $(".check-category").change(function () {
                 var k = $(this).val();
-                If (this.checked) Then {
+                if (this.checked) {
                     var t2 = excludedCats.indexOf(k);
                     excludedCats.splice(t2, 1);
                 }
-                Else {
+                else {
                     excludedCats.push(k);
                 }
             });
@@ -460,13 +473,13 @@ end code
             });
             $(window).resize();
 
-            window.setInterval(Function() {updateTracksLayer(map, tracksLayer, 'acss-tracks'); }, 10000);
+            //window.setInterval(function () { updateTracksLayer(map, tracksLayer, 'acss-tracks'); }, 10000);
 
-                    window.setInterval(Function() {DrawACSSLabel(); }, 5000);
+            //window.setInterval(function () { DrawACSSLabel(); }, 5000);
 
         });
 
     </script>
-    end  section
 
-}
+</body>
+</html>

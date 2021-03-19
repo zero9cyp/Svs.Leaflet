@@ -6,5 +6,6 @@ Imports Microsoft.Owin
 Partial Public Class Startup
     Public Sub Configuration(app As IAppBuilder)
         ConfigureAuth(app) 'This is Throwing exeption i 'll see it later
+        'Done 
     End Sub
 End Class

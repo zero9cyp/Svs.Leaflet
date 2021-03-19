@@ -10,7 +10,6 @@ Public Class HomeController
 
     Public Function Index() As ActionResult
         Using db As NssDbEntities = New NssDbEntities()
-
             Try
                 Dim dataSources As String() = db.vwCurrentSituations.AsNoTracking().Where(Function(m) m.DataSource.Equals("ACSS-TRACKS")).[Select](Function(m) m.Category).Distinct().ToArray()
                 ViewBag.dataSources = dataSources
@@ -31,4 +30,9 @@ Public Class HomeController
         ViewBag.Message = "Your contact page."
         Return View()
     End Function
+
+    Public Function TestView1() As ActionResult
+        Return View()
+    End Function
+
 End Class

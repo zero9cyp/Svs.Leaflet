@@ -35,7 +35,7 @@ Namespace Controllers
                 Case "enc"
                     fullPath = HostingEnvironment.MapPath("~/App_Data/GeoIndex_el.mbtiles")
                 Case Else
-                    fullPath = HostingEnvironment.MapPath("~/App_Data/cyprus2.mbtiles")
+                    fullPath = HostingEnvironment.MapPath("~/App_Data/cyprus.mbtiles")
             End Select
 
             Try
@@ -52,16 +52,12 @@ Namespace Controllers
                 response.Content = New StreamContent(tileStream)
                 response.Content.Headers.ContentType = New MediaTypeHeaderValue("image/png")
                 response.Headers.ETag = New EntityTagHeaderValue(eTag)
-                response.Headers.CacheControl = New CacheControlHeaderValue() With {
-                    .[Private] = True
-                }
+                response.Headers.CacheControl = New CacheControlHeaderValue() With {.[Private] = True}
             Catch ex As Exception
                 _log.Fatal("Get()", ex)
             End Try
 
             Return response
         End Function
-
-
     End Class
 End Namespace
